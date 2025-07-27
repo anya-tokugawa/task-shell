@@ -2,7 +2,7 @@
 # @file Cli
 # @brief サブコマンドを呼び出す為の再帰的なライブラリ
 # @description
-# IPAMコマンド配下のentryやipやsegmentといったサブコマンドや
+# コマンド配下のentryやipやsegmentといったサブコマンドや
 # 配下のサブコマンド（e.g. ls, add, rm）などを呼び出すためのユーティリティ
 
 

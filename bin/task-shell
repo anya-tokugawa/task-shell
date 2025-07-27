@@ -1,8 +1,9 @@
 #!/bin/bash -eu
 TASK_SHELL_DIR="$(cd "$(dirname "$0")"/../; pwd)"
-TASK_SHELL_LIB="$IPAM_SHELL_DIR/lib"
+TASK_SHELL_LIB="$TASK_SHELL_DIR/lib"
+TASK_SHELL_DATA_DIR="${TASK_SHELL_DATA_DIR:-$HOME/.task-shell}"
 source "$TASK_SHELL_LIB/Cli.sh"
 
 : "PREFIX=\"tshsh\" SUBCMD_FILE=\"SubCmds.sh\" \$@ =\"$@\""
-CallSubCmd "tsksh" "$IPAM_SHELL_LIB/SubCmds.sh" "$@"
+CallSubCmd "tsksh" "$TASK_SHELL_LIB/SubCmds.sh" "$@"
 
